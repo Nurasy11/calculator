@@ -1,0 +1,12 @@
+//part2 Write Fibonacci function, that asks user for input, then define first n sequence of Fibonacci numbers. 
+var fibon1 = 0; 
+var fibon2 = 1;
+var fibon3;
+       var d=prompt("Write the Fibonacci number");
+       document.write(fibon1 + " " + fibon2 + " ");
+       for(var i = 3;i <= d; i++){
+        fibon3 = fibon1 + fibon2;
+        fibon1 = fibon2;
+        fibon2 = fibon3;
+        document.write(fibon3 + " ");
+       }
